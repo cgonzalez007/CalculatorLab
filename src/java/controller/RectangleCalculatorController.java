@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.RectangleCalculatorService;
 
 /**
- *
+ * Controller class for processing a request made by the View
  * @author Chris Gonzalez
  */
 @WebServlet(name = "CalculatorController", urlPatterns = {"/calcController"})

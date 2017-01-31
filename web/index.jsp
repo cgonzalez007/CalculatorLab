@@ -30,7 +30,7 @@
                 <br>
                 <br>
                 <label for="width">
-                    Width:
+                    Width:&nbsp;&nbsp;
                 </label>
                 <input type="text" id="width" name="width" value="">
                 <br>
