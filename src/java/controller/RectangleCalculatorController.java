@@ -34,10 +34,10 @@ public class RectangleCalculatorController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String destination = WELCOME_RESPONSE;  
         try {
-            double length = Double.parseDouble(request.getParameter("length"));
-            double width = Double.parseDouble(request.getParameter("width"));
+            String length = request.getParameter("length");
+            String width = request.getParameter("width");
             RectangleCalculatorService service = new RectangleCalculatorService();
-            String responseMsg = Double.toString(service.calculateAreaOfRectangle(length, width));
+            String responseMsg = service.calculateAreaOfRectangle(length, width);
 
             request.setAttribute("msg", responseMsg);
             
